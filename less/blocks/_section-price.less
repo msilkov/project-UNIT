@@ -1,0 +1,199 @@
+.section-price {
+  padding: 75px 0;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+  background-color: #49c38f;
+
+  // tablet
+  @media (min-width: 768px) {
+    padding: 75px 0 80px;
+    background-color: grey;
+    background-image: url("../img/section-bg/section-price-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  // desctop
+  @media (min-width: 1200px) {
+    padding: 103px 0 90px;
+  }
+}
+.section-price__content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+.section-price__heading {
+  margin-bottom: 50px;
+  // tablet
+  @media (min-width: 768px) {
+    margin-bottom: 64px;
+  }
+  // desctop
+  @media (min-width: 1200px) {
+    margin-bottom: 77px;
+  }
+}
+.price-heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  margin-bottom: 37px;
+  // tablet
+  @media (min-width: 768px) {
+  }
+  // desctop
+  @media (min-width: 1200px) {
+    margin-bottom: 68px;
+  }
+}
+.price-desc {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 42px;
+  }
+  // desctop
+  @media (min-width: 1200px) {
+    font-size: 48px;
+  }
+}
+.section-price__plans {
+  display: block;
+  // tablet
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.plan-box {
+  max-width: 290px;
+  margin: 0 auto 20px;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.75);
+  &:last-child {
+    margin: 0 auto;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background-color: rgba(48, 79, 254, 0.95);
+    transition: 500ms ease;
+    .price-button {
+      background-color: #ffffff;
+      color: #666666;
+      transition: 500ms ease-in;
+    }
+  }
+  // tablet
+  @media (min-width: 768px) {
+    margin: unset;
+    margin-right: 24px;
+    width: 230px;
+    max-width: unset;
+    &:last-child {
+      margin: unset;
+      margin-right: 0;
+    }
+  }
+  // desctop
+  @media (min-width: 1200px) {
+    margin-right: 30px;
+    width: 303px;
+  }
+}
+.plan-box__header {
+  border-bottom: rgba(255, 255, 255, 0.05) 1px solid;
+  padding-bottom: 28px;
+}
+.plan-box__title {
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  margin-bottom: 34px;
+  // desctop
+  @media (min-width: 1200px) {
+    margin-bottom: 15px;
+  }
+}
+.plan-box__cost {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 4px;
+  margin-bottom: 41px;
+  // tablet
+  @media (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  // desctop
+  @media (min-width: 1200px) {
+    margin-bottom: 23px;
+  }
+}
+.plan-box__permounth {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  line-height: 1.2;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.plan-box__desc {
+  padding-top: 34px;
+}
+.plan-box__list {
+  list-style-type: none;
+  margin-bottom: 40px;
+  // desctop
+  @media (min-width: 1200px) {
+    margin-bottom: 35px;
+  }
+}
+.plan-box__list-item {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.price-button {
+  display: inline-block;
+  padding: 18px 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
